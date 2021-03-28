@@ -158,7 +158,7 @@ Master_Run_SmokePing(){
 #启动Slaves服务
 Slaves_Run_SmokePing(){
 	cd /opt/smokeping/bin
-	./smokeping --master-url=http://$server_name/smokeping.fcgi --cache-dir=/opt/smokeping/htdocs/cache --shared-secret=/opt/smokeping/etc/smokeping_secrets.dist --slave-name=$slaves_name --logfile=/opt/smokeping/slave.log
+	./smokeping --master-url=https://$server_name/smokeping.fcgi --cache-dir=/opt/smokeping/htdocs/cache --shared-secret=/opt/smokeping/etc/smokeping_secrets.dist --slave-name=$slaves_name --logfile=/opt/smokeping/slave.log
 }
 
 Single_Install(){
