@@ -32,7 +32,7 @@
 - 此脚本安装的Tcppinng仅适用于SmokePing
 
 ## 安装/卸载 ##
-    wget -N --no-check-certificate https://raw.githubusercontent.com/ILLKX/smokeping-onekey/master/smokeping.sh && bash smokeping.sh
+    wget -N --no-check-certificate https://raw.githubusercontent.com/Darkatse/smokeping-onekey/master/smokeping.sh && bash smokeping.sh
 
 ## 截图 ##
 ![https://raw.githubusercontent.com/ILLKX/smokeping-onekey/master/1.jpg](1.jpg)
