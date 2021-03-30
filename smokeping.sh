@@ -43,9 +43,9 @@ Install_Dependency(){
 #下载smokeping
 Download_Source(){
 	cd
-	wget https://github.com/ILLKX/smokeping-onekey/raw/master/smokeping-2.6.11.tar.gz
-	tar -xzvf smokeping-2.6.11.tar.gz
-	cd smokeping-2.6.11
+	wget https://oss.oetiker.ch/smokeping/pub/smokeping-2.7.3.tar.gz
+	tar -xzvf smokeping-2.7.3.tar.gz
+	cd smokeping-2.7.3
 }
 
 #安装smokeping
@@ -57,7 +57,7 @@ Install_SomkePing(){
 
 #清除文件
 Delete_Files(){
-	rm -rf /root/smokeping-2.6.*
+	rm -rf /root/smokeping-2.7.*
 }
 
 #配置smokeping
@@ -158,7 +158,7 @@ Master_Run_SmokePing(){
 #启动Slaves服务
 Slaves_Run_SmokePing(){
 	cd /opt/smokeping/bin
-	./smokeping --master-url=https://$server_name/smokeping.fcgi --cache-dir=/opt/smokeping/htdocs/cache --shared-secret=/opt/smokeping/etc/smokeping_secrets.dist --slave-name=$slaves_name --logfile=/opt/smokeping/slave.log
+	./smokeping --master-url=http://$server_name/smokeping.fcgi --cache-dir=/opt/smokeping/htdocs/cache --shared-secret=/opt/smokeping/etc/smokeping_secrets.dist --slave-name=$slaves_name --logfile=/opt/smokeping/slave.log
 }
 
 Single_Install(){
